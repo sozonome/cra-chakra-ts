@@ -1,16 +1,19 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { routes } from "lib/routes";
+import Layout from 'lib/layout';
+import Routings from 'lib/router/Routings';
+import customTheme from 'lib/styles/customTheme';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        {routes.map((routeProps) => (
-          <Route {...routeProps} key={routeProps.path as string} />
-        ))}
-      </Routes>
-    </Router>
+    <ChakraProvider theme={customTheme}>
+      <Router>
+        <Layout>
+          <Routings />
+        </Layout>
+      </Router>
+    </ChakraProvider>
   );
 };
 
