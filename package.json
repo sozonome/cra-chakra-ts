@@ -26,7 +26,7 @@
     "format": "prettier --write src",
     "up": "yarn upgrade-interactive",
     "up-latest": "yarn up --latest",
-    "release": "standard-version",
+    "release": "cross-env HUSKY=0 standard-version",
     "push-release": "git push --follow-tags origin main",
     "prepare": "husky install"
   },
@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/cz-commitlint": "^16.2.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -52,7 +53,9 @@
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
     "@types/react-helmet": "^6.1.5",
+    "commitizen": "^4.2.4",
     "commitlint": "^16.2.3",
+    "cross-env": "^7.0.3",
     "eslint-config-sznm": "^0.2.1",
     "husky": "^7.0.0",
     "lint-staged": "^12.3.8",
