@@ -2,7 +2,10 @@ import { ColorModeScript } from '@chakra-ui/react';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import customTheme from 'lib/styles/customTheme';
+// fonts
+import '@fontsource/plus-jakarta-sans/latin.css';
+
+import { customTheme } from 'lib/styles/customTheme';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
