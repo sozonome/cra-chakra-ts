@@ -1,5 +1,8 @@
+import { ColorModeScript } from '@chakra-ui/react';
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import customTheme from 'lib/styles/customTheme';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,6 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <ColorModeScript initialColorMode={customTheme.config?.initialColorMode} />
     <App />
   </React.StrictMode>
 );
