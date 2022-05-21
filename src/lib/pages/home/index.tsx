@@ -1,19 +1,21 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+
+import CTASection from 'lib/components/samples/CTASection';
+import SomeText from 'lib/components/samples/SomeText';
 
 const HomePage = () => {
   return (
     <Flex
       direction="column"
-      justify="center"
       alignItems="center"
-      textAlign="center"
-      minHeight="80vh"
-      gridGap={8}
+      justifyContent="center"
+      minHeight="70vh"
+      gap={4}
+      mb={8}
+      w="full"
     >
-      <Box>
-        <Heading>Create React App</Heading>
-        <Text>Chakra-UI TypeScript template</Text>
-      </Box>
+      <SomeText />
+      <CTASection />
     </Flex>
   );
 };
