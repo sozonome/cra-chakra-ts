@@ -21,12 +21,12 @@ npx degit sozonome/cra-chakra-ts <app_name>
 Then, run the development server:
 
 ```bash
-yarn start
+pnpm start
 ```
 
 ## Deployment
 
-- build command: `yarn build`
+- build command: `pnpm build`
 
 ## References
 
